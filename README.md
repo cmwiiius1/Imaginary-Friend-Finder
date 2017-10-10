@@ -6,4 +6,4 @@ The survey has 10 questions. Each answer is on a scale from 1 to 5 based on the 
 
 Also used in this mini project are jQuery, Bootstrap, and a custom Bootstrap theme.
 
-Live site may be seen at: 
+Live site may be seen at: https://mysterious-savannah-43164.herokuapp.com

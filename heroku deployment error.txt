@@ -1,0 +1,175 @@
+Creating app... done, mysterious-savannah-43164
+https://mysterious-savannah-43164.herokuapp.com/ | https://git.heroku.com/mysterious-savannah-43164.git
+
+
+ git commit -m "Final IFF"
+[master f3f004e] Final IFF
+ 19 files changed, 607 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ rewrite README.md (100%)
+ create mode 100644 app/data/friends.js
+ create mode 100644 app/public/css/home_style.css
+ create mode 100644 app/public/css/survey_style.css
+ create mode 100644 app/public/home.html
+ create mode 100644 app/public/images/WD1.jpg
+ create mode 100644 app/public/images/WD2.jpg
+ create mode 100644 app/public/images/WD3.jpg
+ create mode 100644 app/public/images/WD4.jpg
+ create mode 100644 app/public/images/disney-characters-big.jpg
+ create mode 100644 app/public/images/loading.gif
+ create mode 100644 app/public/js/home_js.js
+ create mode 100644 app/public/js/survey_js.js
+ create mode 100644 app/public/survey.html
+ create mode 100644 app/routing/api_routes.js
+ create mode 100644 app/routing/html_routes.js
+ create mode 100644 package.json
+ create mode 100644 server.js
+
+cmwii@DESKTOP-CVC7A82 MINGW64 /c/RUBootCamp/Imaginary-Friend-Finder (master)
+$ git push origin master
+Counting objects: 28, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (28/28), 736.12 KiB | 13.63 MiB/s, done.
+Total 28 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/cmwiiius1/Imaginary-Friend-Finder.git
+   2bbb95c..f3f004e  master -> master
+
+cmwii@DESKTOP-CVC7A82 MINGW64 /c/RUBootCamp/Imaginary-Friend-Finder (master)
+$ git remote -v
+origin  https://github.com/cmwiiius1/Imaginary-Friend-Finder.git (fetch)
+origin  https://github.com/cmwiiius1/Imaginary-Friend-Finder.git (push)
+
+cmwii@DESKTOP-CVC7A82 MINGW64 /c/RUBootCamp/Imaginary-Friend-Finder (master)
+$ heroku create
+Creating app... !
+ !    Invalid credentials provided.
+Enter your Heroku credentials:
+Email: cmwiiius1@hotmail.com
+Password: *********
+Creating app... done, mysterious-savannah-43164
+https://mysterious-savannah-43164.herokuapp.com/ | https://git.heroku.com/mysterious-savannah-43164.git
+
+cmwii@DESKTOP-CVC7A82 MINGW64 /c/RUBootCamp/Imaginary-Friend-Finder (master)
+
+$
+
+cmwii@DESKTOP-CVC7A82 MINGW64 /c/RUBootCamp
+$ cd Imaginary-Friend-Finder/
+
+cmwii@DESKTOP-CVC7A82 MINGW64 /c/RUBootCamp/Imaginary-Friend-Finder (master)
+$ git push heroku master
+Counting objects: 31, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (26/26), done.
+Writing objects: 100% (31/31), 736.33 KiB | 15.34 MiB/s, done.
+Total 31 (delta 2), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Node.js app detected
+remote:
+remote: -----> Creating runtime environment
+remote:
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NPM_CONFIG_PRODUCTION=true
+remote:        NODE_VERBOSE=false
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote:
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:
+remote:        Resolving node version 6.x...
+remote:        Downloading and installing node 6.11.4...
+remote:        Using default npm version: 3.10.10
+remote:
+remote: -----> Restoring cache
+remote:        Skipping cache restore (not-found)
+remote:
+remote: -----> Building dependencies
+remote:        Installing node modules (package.json)
+remote:        imaginaryfriendfinder@1.0.0 /tmp/build_dffc4f80b55c5a9cc14bef7c78e674aa
+remote:        +-- body-parser@1.18.2
+remote:        ¦ +-- bytes@3.0.0
+remote:        ¦ +-- content-type@1.0.4
+remote:        ¦ +-- debug@2.6.9
+remote:        ¦ ¦ +-- ms@2.0.0
+remote:        ¦ +-- depd@1.1.1
+remote:        ¦ +-- http-errors@1.6.2
+remote:        ¦ ¦ +-- inherits@2.0.3
+remote:        ¦ ¦ +-- setprototypeof@1.0.3
+remote:        ¦ +-- iconv-lite@0.4.19
+remote:        ¦ +-- on-finished@2.3.0
+remote:        ¦ ¦ +-- ee-first@1.1.1
+remote:        ¦ +-- qs@6.5.1
+remote:        ¦ +-- raw-body@2.3.2
+remote:        ¦ ¦ +-- unpipe@1.0.0
+remote:        ¦ +-- type-is@1.6.15
+remote:        ¦   +-- media-typer@0.3.0
+remote:        ¦   +-- mime-types@2.1.17
+remote:        ¦     +-- mime-db@1.30.0
+remote:        +-- express@4.16.2
+remote:        ¦ +-- accepts@1.3.4
+remote:        ¦ ¦ +-- negotiator@0.6.1
+remote:        ¦ +-- array-flatten@1.1.1
+remote:        ¦ +-- content-disposition@0.5.2
+remote:        ¦ +-- cookie@0.3.1
+remote:        ¦ +-- cookie-signature@1.0.6
+remote:        ¦ +-- encodeurl@1.0.1
+remote:        ¦ +-- escape-html@1.0.3
+remote:        ¦ +-- etag@1.8.1
+remote:        ¦ +-- finalhandler@1.1.0
+remote:        ¦ +-- fresh@0.5.2
+remote:        ¦ +-- merge-descriptors@1.0.1
+remote:        ¦ +-- methods@1.1.2
+remote:        ¦ +-- parseurl@1.3.2
+remote:        ¦ +-- path-to-regexp@0.1.7
+remote:        ¦ +-- proxy-addr@2.0.2
+remote:        ¦ ¦ +-- forwarded@0.1.2
+remote:        ¦ ¦ +-- ipaddr.js@1.5.2
+remote:        ¦ +-- range-parser@1.2.0
+remote:        ¦ +-- safe-buffer@5.1.1
+remote:        ¦ +-- send@0.16.1
+remote:        ¦ ¦ +-- destroy@1.0.4
+remote:        ¦ ¦ +-- mime@1.4.1
+remote:        ¦ +-- serve-static@1.13.1
+remote:        ¦ +-- setprototypeof@1.1.0
+remote:        ¦ +-- statuses@1.3.1
+remote:        ¦ +-- utils-merge@1.0.1
+remote:        ¦ +-- vary@1.1.2
+remote:        +-- path@0.12.7
+remote:        +-- process@0.11.10
+remote:        +-- util@0.10.3
+remote:        +-- inherits@2.0.1
+remote:
+remote:
+remote: -----> Caching build
+remote:        Clearing previous node cache
+remote:        Saving 2 cacheDirectories (default):
+remote:        - node_modules
+remote:        - bower_components (nothing to cache)
+remote:
+remote: -----> Build succeeded!
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 14.7M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://mysterious-savannah-43164.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/mysterious-savannah-43164.git
+ * [new branch]      master -> master
+
+cmwii@DESKTOP-CVC7A82 MINGW64 /c/RUBootCamp/Imaginary-Friend-Finder (master)
+$ heroku open
+
+cmwii@DESKTOP-CVC7A82 MINGW64 /c/RUBootCamp/Imaginary-Friend-Finder (master)
+$
+
